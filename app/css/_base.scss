@@ -1,0 +1,174 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.transition{
+	-webkit-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+.pos-r{
+	position: relative;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.tal-left{
+	text-align: left;
+}
+.tal-center{
+	text-align: center;
+}
+.tal-right{
+	text-align: right;
+}
+.tt-uppc{
+	text-transform: uppercase;
+}
+.bd-none{
+	border: none;
+}
+.list-clear{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.fs-clear{
+	font-size: 0;
+	line-height: 0;
+}
+.bd{
+	border: 1px solid #f00;
+}
+.tiles-content{
+	display: table;
+	width: 100%;
+
+	.tiles{
+		display: table-cell;
+		vertical-align: top;
+
+		&.val-top{
+			vertical-align: top;
+		}
+		&.val-middle{
+			vertical-align: middle;
+		}
+		&.val-bottom{
+			vertical-align: bottom;
+		}
+	}
+}
+.val-top{
+	vertical-align: top;
+}
+.val-middle{
+	vertical-align: middle;
+}
+.val-bottom{
+	vertical-align: bottom;
+}
+.ir {
+	text-indent: 120%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.d-b{
+	display: block;
+}
+.d-ib{
+	display: inline-block;
+}
+.media-info{
+	overflow: hidden;
+
+	&.media-left{
+		.media{
+			@extend .left;
+			margin: 0 1em 0 0;
+
+			@include mq(phone){
+				float: none;
+			}
+		}
+	}
+
+	&.media-right{
+		.media{
+			@extend .right;
+			margin: 0 0 0 1em;
+
+			@include mq(phone){
+				float: none;
+			}
+		}
+	}
+	.info{
+		overflow: hidden;
+	}
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.s-spr{
+	background: url(../img/s-spr.png) -100% -100%  no-repeat;
+}
+.responsive-tablet{
+	float: left;
+	display: none;
+
+	@include mq(tablet){
+	    float: none;
+	}
+}
+
+.responsive-phone{
+	float: left;
+	display: none;
+
+	@include mq(tablet){
+	    float: none;
+	}
+}
+
+.w-100p{
+	width: 100%;
+}
+
+html{
+	font-size: 16px;
+}
+body{
+
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+p{
+	margin: 0 0 1rem;
+}
+ul{
+	@extend .list-clear;
+}
+a{}
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+input,
+textarea,
+button{
+	outline: none;
+}
