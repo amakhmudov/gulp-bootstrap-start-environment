@@ -1,4 +1,4 @@
-# Gulp Boostrap Start Environment
+# Gulp Boostrap Start Environment for development
 
 Following is the my preferred, configured gulp start environment, hand made boilerplate.
 
